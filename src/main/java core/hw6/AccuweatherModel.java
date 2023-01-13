@@ -51,7 +51,8 @@ public class AccuweatherModel implements WeatherModel {
 
                 Response oneDayForecastResponse = okHttpClient.newCall(request).execute();
                 String weatherResponse = oneDayForecastResponse.body().string();
-                System.out.println( "Погода  в городе " +  selectedCity +weatherResponse);
+                System.out.println( "Погода  в городе " +  selectedCity+weatherResponse);
+
                 break;
             //dataBaseRepository.saveWeatherToDataBase(new Weather(selectedCity));
 
